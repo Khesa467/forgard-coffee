@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2025 at 10:23 AM
+-- Generation Time: Dec 31, 2025 at 07:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -117,7 +117,8 @@ CREATE TABLE `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`ID_Pelanggan`, `Username`, `Password`, `Nama`, `Alamat`, `Nomor_Telepon`, `Email`) VALUES
-(1, 'khesa764', 'khesa123', 'Muhammad Khesa Rhafi', 'Bogor', '0895392666544', 'khesa@mail.com');
+(1, 'khesa764', 'khesa123', 'Muhammad Khesa Rhafi', 'Bogor', '0895392666544', 'khesa@mail.com'),
+(2, 'fauzan', 'fauzan123', 'fauzan', 'Pamulang', '07838163813', 'fauzan@mail.com');
 
 -- --------------------------------------------------------
 
@@ -140,7 +141,8 @@ CREATE TABLE `pesanan` (
 --
 
 INSERT INTO `pesanan` (`ID_Pesanan`, `ID_Pelanggan`, `ID_Produk`, `Jumlah`, `Alamat_Pengiriman`, `Tanggal_Pesanan`, `Status_Pesanan`) VALUES
-(1, 1, 2, 2, 'Parung', '2025-10-26', 'Belum Dikirim');
+(1, 1, 2, 2, 'Parung', '2025-10-26', 'Dikirim'),
+(2, 2, 11, 4, 'pamulang', '2025-12-15', 'Dikirim');
 
 -- --------------------------------------------------------
 
@@ -171,7 +173,7 @@ INSERT INTO `produk` (`ID_Produk`, `Nama_Produk`, `Harga`, `Stok`, `ID_Kategori`
 (8, 'Iced Tea', 22000.00, 35, 5),
 (9, 'Thai Tea', 28000.00, 30, 5),
 (10, 'Mocha Blended', 42000.00, 40, 3),
-(11, 'Chocolate Blended', 38000.00, 45, 3),
+(11, 'Chocolate Blended', 38000.00, 41, 3),
 (12, 'Green Tea Blended', 37000.00, 35, 3),
 (13, 'Strawberry Frappe', 35000.00, 30, 4),
 (14, 'Blueberry Frappe', 35000.00, 25, 4),
@@ -199,7 +201,8 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`ID_Transaksi`, `ID_Pesanan`, `Tanggal`, `Total_Harga`, `Metode_Pembayaran`, `Status_Pembayaran`, `ID_Pegawai`, `ID_Pelanggan`) VALUES
-(1, NULL, '2025-10-26', 80000.00, 'GOPAY', 'Pending', 1, 1);
+(1, NULL, '2025-10-26', 80000.00, 'GOPAY', 'Lunas', 1, 1),
+(2, NULL, '2025-12-15', 136800.00, 'GOPAY', 'Lunas', 1, 2);
 
 --
 -- Indexes for dumped tables
@@ -280,13 +283,13 @@ ALTER TABLE `pegawai`
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `ID_Pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_Pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `ID_Pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_Pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `produk`
@@ -298,7 +301,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `ID_Transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_Transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
