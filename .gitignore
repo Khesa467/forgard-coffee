@@ -1,0 +1,22 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE Files
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Database
+*.sql~
+*.backup
+
+# PHP
+vendor/
+composer.lock
