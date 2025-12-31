@@ -194,7 +194,7 @@ Enable error reporting di file php.ini untuk melihat error yang terjadi.
 ## 👨‍💻 Author
 
 **Muhammad Khesa Rhafi**  
-📧 khesa@mail.com | 🐙 GitHub: [@yourusername](https://github.com/yourusername)
+📧 muhammadkhesarhafi@gmail.com | 🐙 GitHub: [@Khesa764](https://github.com/Khesa764/forgard-coffee)
 
 ## 📝 License
 
