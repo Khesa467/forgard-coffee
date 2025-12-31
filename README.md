@@ -196,10 +196,6 @@ Enable error reporting di file php.ini untuk melihat error yang terjadi.
 **Muhammad Khesa Rhafi**  
 📧 muhammadkhesarhafi@gmail.com | 🐙 GitHub: [@Khesa467](https://github.com/Khesa467/forgard-coffee)
 
-## 📝 License
-
-Project ini menggunakan MIT License - bebas digunakan dan dimodifikasi.
-
 ---
 
 <div align="center">Made with ☕ and ❤️ by Muhammad Khesa Rhafi</div>
